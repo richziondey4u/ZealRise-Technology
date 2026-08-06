@@ -44,7 +44,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(false)}
           className="text-lg md:text-xl font-semibold tracking-tight text-text"
         >
-          <span className="gradient-text">Dev</span>Folio
+          <span className="gradient-text">ZealRise</span>Technology
         </NavLink>
 
         <ul className="hidden md:flex items-center gap-8">

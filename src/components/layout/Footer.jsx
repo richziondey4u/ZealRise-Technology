@@ -1,23 +1,23 @@
-import {  Mail, MessageCircle, ArrowUpRight } from 'lucide-react'
+import { Mail, MessageCircle, ArrowUpRight } from "lucide-react";
 
-const Anchor = 'a'
+const Anchor = "a";
 
 const SOCIAL_LINKS = [
-//   { name: 'GitHub', icon: Github, href: 'https://github.com/yourusername' },
-//   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/yourusername' },
-  { name: 'Email', icon: Mail, href: 'mailto:you@example.com' },
-  { name: 'WhatsApp', icon: MessageCircle, href: 'https://wa.me/1234567890' },
-]
+  //   { name: 'GitHub', icon: Github, href: 'https://github.com/yourusername' },
+  //   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/yourusername' },
+  { name: "Email", icon: Mail, href: "mailto:you@example.com" },
+  { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/1234567890" },
+];
 
 const QUICK_LINKS = [
-  { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Services', path: '/services' },
-  { name: 'Contact', path: '/contact' },
-]
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Services", path: "/services" },
+  { name: "Contact", path: "/contact" },
+];
 
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="relative mt-32 border-t border-border">
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <h3 className="text-xl font-semibold mb-3">
-              <span className="gradient-text">Dev</span>Folio
+              <span className="gradient-text">ZealRise</span>Technology
             </h3>
             <p className="text-text-muted text-sm leading-relaxed max-w-xs">
               Full Stack Engineer crafting fast, accessible, and beautifully
@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted text-center sm:text-left">
-            © {year} DevFolio. All rights reserved.
+            © {year} ZealRise-Technology. All rights reserved.
           </p>
           <p className="text-xs text-text-muted">
             Built with React, Tailwind CSS & Framer Motion.
@@ -86,5 +86,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

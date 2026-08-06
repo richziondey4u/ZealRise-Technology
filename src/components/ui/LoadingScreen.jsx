@@ -25,7 +25,7 @@ export default function LoadingScreen() {
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="text-2xl font-semibold tracking-tight"
             >
-              <span className="gradient-text">Dev</span>Folio
+              <span className="gradient-text">ZealRise</span>Technology
             </motion.div>
             <div className="w-40 h-[2px] rounded-full bg-white/5 overflow-hidden">
               <motion.div

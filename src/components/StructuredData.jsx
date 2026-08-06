@@ -1,52 +1,52 @@
-import { useEffect } from 'react'
+import { useEffect } from "react";
 
-const SITE_URL = 'https://yourdomain.com'
-const PERSON_NAME = 'Your Name'
-const JOB_TITLE = 'Full Stack Engineer'
+const SITE_URL = "https://yourdomain.com";
+const PERSON_NAME = "Your Name";
+const JOB_TITLE = "Full Stack Engineer";
 
-export default function StructuredData({ pageTitle, path = '/' }) {
+export default function StructuredData({ pageTitle, path = "/" }) {
   useEffect(() => {
-    const scriptId = 'structured-data-script'
-    let script = document.getElementById(scriptId)
+    const scriptId = "structured-data-script";
+    let script = document.getElementById(scriptId);
     if (!script) {
-      script = document.createElement('script')
-      script.id = scriptId
-      script.type = 'application/ld+json'
-      document.head.appendChild(script)
+      script = document.createElement("script");
+      script.id = scriptId;
+      script.type = "application/ld+json";
+      document.head.appendChild(script);
     }
 
     const data = {
-      '@context': 'https://schema.org',
-      '@graph': [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          '@type': 'Person',
+          "@type": "Person",
           name: PERSON_NAME,
           jobTitle: JOB_TITLE,
           url: SITE_URL,
           sameAs: [
-            'https://github.com/yourusername',
-            'https://linkedin.com/in/yourusername',
-            'https://twitter.com/yourusername',
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername",
+            "https://twitter.com/yourusername",
           ],
         },
         {
-          '@type': 'WebSite',
-          name: 'DevFolio',
+          "@type": "WebSite",
+          name: "ZealRise-Technology",
           url: SITE_URL,
         },
         {
-          '@type': 'BreadcrumbList',
+          "@type": "BreadcrumbList",
           itemListElement: [
             {
-              '@type': 'ListItem',
+              "@type": "ListItem",
               position: 1,
-              name: 'Home',
+              name: "Home",
               item: SITE_URL,
             },
-            ...(path !== '/'
+            ...(path !== "/"
               ? [
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 2,
                     name: pageTitle,
                     item: `${SITE_URL}${path}`,
@@ -56,14 +56,14 @@ export default function StructuredData({ pageTitle, path = '/' }) {
           ],
         },
       ],
-    }
+    };
 
-    script.textContent = JSON.stringify(data)
+    script.textContent = JSON.stringify(data);
 
     return () => {
       // leave script in place between route changes; content is updated on next mount
-    }
-  }, [pageTitle, path])
+    };
+  }, [pageTitle, path]);
 
-  return null
+  return null;
 }

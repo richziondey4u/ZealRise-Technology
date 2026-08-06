@@ -1,5 +1,6 @@
 export const PROJECT_CATEGORIES = ["All", "Full Stack", "Frontend", "Backend"];
 import luxemarketImage from "../assets/images/luxemarket.png"
+import chefWebsiteImage from "../assets/images/chefweb.png";
 
 export const PROJECTS = [
   {
@@ -21,18 +22,25 @@ export const PROJECTS = [
     githubUrl: "YOUR_GITHUB_REPOSITORY",
     featured: true,
   },
-  {
-    id: 2,
-    title: "SaaS Analytics Dashboard",
-    description:
-      "Real-time analytics dashboard with interactive charts, team management, and role-based access control.",
-    category: "Full Stack",
-    tags: ["Next.js", "TypeScript", "MongoDB", "Chart.js"],
-    image: null,
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/saas-dashboard",
-    featured: true,
-  },
+{
+  id: 2,
+  title: "Chef Restaurant Website",
+  description:
+    "A modern and responsive restaurant website designed to showcase signature dishes, chef services, customer testimonials, and an engaging dining experience. Built with a clean UI, smooth animations, and a mobile-first approach to help restaurants attract and convert more customers.",
+  category: "Frontend",
+  tags: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "JavaScript",
+    "Responsive Design",
+    "Framer Motion"
+  ],
+  image: chefWebsiteImage,
+  liveUrl: "https://chef-websites.netlify.app/",
+  githubUrl: "YOUR_GITHUB_REPOSITORY",
+  featured: true,
+},  
   {
     id: 3,
     title: "Portfolio Landing Page",

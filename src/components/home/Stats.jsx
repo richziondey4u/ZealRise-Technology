@@ -3,9 +3,9 @@ import AnimatedCounter from '../ui/AnimatedCounter.jsx'
 import ScrollReveal from '../ui/ScrollReveal.jsx'
 
 const STATS = [
-  { icon: Code2, value: 40, suffix: '+', label: 'Projects Completed' },
+  { icon: Code2, value: 25, suffix: '+', label: 'Projects Completed' },
   { icon: Briefcase, value: 4, suffix: '+', label: 'Years Experience' },
-  { icon: Users, value: 25, suffix: '+', label: 'Happy Clients' },
+  { icon: Users, value: 18, suffix: '+', label: 'Happy Clients' },
   { icon: Award, value: 15, suffix: '+', label: 'Technologies Mastered' },
 ]
 
