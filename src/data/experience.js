@@ -1,67 +1,55 @@
 export const EXPERIENCE = [
   {
     id: 1,
-    role: 'Senior Full Stack Engineer',
-    company: 'Tech Innovators Inc.',
-    period: '2023 — Present',
-    type: 'Full-time',
+    role: "Full Stack Developer",
+    company: "Freelance & Personal Projects",
+    period: "2026 — Present",
+    type: "Self-Employed",
     description:
-      'Leading development of a multi-tenant SaaS platform serving 50,000+ users. Architected the backend API and mentored a team of 4 engineers.',
+      "Building full-stack web applications using modern JavaScript technologies with a focus on e-commerce, fintech, authentication systems, payment integration, and scalable REST APIs.",
     highlights: [
-      'Reduced page load time by 60% through code splitting and caching',
-      'Designed and shipped the company\'s core billing system',
-      'Led migration from monolith to microservices architecture',
+      "Built complete e-commerce platforms with customer and admin dashboards",
+      "Developed secure authentication using JWT, cookies, and role-based access control",
+      "Designed PostgreSQL databases and REST APIs using Express and Prisma ORM",
     ],
   },
   {
     id: 2,
-    role: 'Full Stack Developer',
-    company: 'Digital Solutions Co.',
-    period: '2021 — 2023',
-    type: 'Full-time',
+    role: "Frontend Developer",
+    company: "Freelance",
+    period: "2025 — 2026",
+    type: "Project-Based",
     description:
-      'Built and maintained client-facing web applications across e-commerce and fintech industries.',
+      "Created responsive and interactive web applications with React, Vite, and Tailwind CSS while focusing on performance, clean UI, and user experience.",
     highlights: [
-      'Delivered 12+ production applications for enterprise clients',
-      'Implemented CI/CD pipelines, reducing deployment time by 70%',
-      'Introduced automated testing, raising coverage from 20% to 85%',
+      "Developed responsive interfaces with React and Tailwind CSS",
+      "Implemented state management using React Context and TanStack Query",
+      "Optimized application performance with reusable components and lazy loading",
     ],
   },
   {
     id: 3,
-    role: 'Frontend Developer',
-    company: 'Creative Web Studio',
-    period: '2019 — 2021',
-    type: 'Full-time',
+    role: "Backend Developer",
+    company: "Personal Projects",
+    period: "2025 — Present",
+    type: "Project-Based",
     description:
-      'Focused on building responsive, animated marketing sites and web applications for agency clients.',
+      "Developed secure backend services and APIs using Node.js, Express, PostgreSQL, and Prisma for real-world web applications.",
     highlights: [
-      'Shipped 20+ high-performance marketing websites',
-      'Built a reusable component library adopted studio-wide',
-      'Collaborated directly with designers to achieve pixel-perfect builds',
+      "Built RESTful APIs with Express.js",
+      "Integrated PostgreSQL databases using Prisma ORM",
+      "Implemented file uploads, payment gateways, and secure authentication",
     ],
   },
-  {
-    id: 4,
-    role: 'Junior Web Developer',
-    company: 'StartUp Labs',
-    period: '2018 — 2019',
-    type: 'Full-time',
-    description:
-      'First professional role — learned production engineering practices while contributing to an early-stage product.',
-    highlights: [
-      'Built internal admin tools used daily by the operations team',
-      'Contributed to core product features under senior engineer guidance',
-      'Gained hands-on experience with the full software development lifecycle',
-    ],
-  },
-]
+];
 
 export const EDUCATION = [
   {
     id: 1,
-    degree: 'B.Sc. Computer Science',
-    institution: 'University Name',
-    period: '2014 — 2018',
+    degree: "Full-Stack Software Engineering",
+    institution: "Anchorsoft Academy • Ikeja, Lagos",
+    period: "2026",
+    description:
+      "Completed an intensive Full-Stack Software Engineering program covering HTML5, CSS3, JavaScript (ES6+), React, Vite, Tailwind CSS, Node.js, Express.js, PostgreSQL, Prisma ORM, Git, GitHub, REST API development, authentication, deployment, and modern software development best practices. Built multiple real-world full-stack applications including e-commerce, fintech, and management systems.",
   },
-]
+];
