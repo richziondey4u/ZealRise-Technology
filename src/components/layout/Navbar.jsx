@@ -19,17 +19,13 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 12);
-
     handleScroll();
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-
     return () => {
       document.body.style.overflow = "";
     };
@@ -37,10 +33,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
-        scrolled
-          ? "glass shadow-lg shadow-black/20 border-border"
-          : "bg-bg/70 backdrop-blur-md border-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? "bg-bg/95 backdrop-blur-md shadow-lg shadow-black/10 border-b border-border" 
+          : "bg-bg border-b border-border"
       }`}
     >
       <nav className="container-custom flex items-center justify-between h-16 md:h-20">
@@ -70,11 +66,10 @@ export default function Navbar() {
                 {({ isActive }) => (
                   <span className="relative py-1">
                     {link.name}
-
                     {isActive && (
                       <motion.span
                         layoutId="nav-underline"
-                        className="absolute left-0 right-0 -bottom-1 h-[2px] rounded-full bg-primary-light"
+                        className="absolute left-0 right-0 -bottom-1 h-[2px] rounded-full bg-gradient-to-r from-primary to-primary-light"
                         transition={{
                           type: "spring",
                           stiffness: 380,
@@ -94,7 +89,7 @@ export default function Navbar() {
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white bg-primary hover:bg-primary-light transition-colors duration-200 shadow-lg shadow-primary/20"
+            className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-primary to-primary-light hover:shadow-lg hover:shadow-primary/30 transition-all duration-200"
           >
             Resume
           </a>
@@ -104,7 +99,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full glass text-text"
+          className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg bg-bg-secondary border border-border text-text hover:bg-bg-tertiary transition-colors duration-200"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
@@ -120,7 +115,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden overflow-hidden glass border-t border-border"
+            className="md:hidden bg-bg border-t border-border"
           >
             <ul className="flex flex-col gap-1 px-6 py-6">
               {NAV_LINKS.map((link, i) => (
@@ -134,7 +129,7 @@ export default function Navbar() {
                     to={link.path}
                     onClick={() => setIsOpen(false)}
                     className={({ isActive }) =>
-                      `block py-3 text-base font-medium border-b border-white/5 transition-colors ${
+                      `block py-3 text-base font-medium border-b border-border/50 transition-colors ${
                         isActive
                           ? "text-text"
                           : "text-text-muted hover:text-text"
@@ -156,7 +151,7 @@ export default function Navbar() {
                 <a
                   href="/resume.pdf"
                   download
-                  className="inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-medium text-white bg-primary hover:bg-primary-light transition-colors duration-200"
+                  className="inline-flex w-full items-center justify-center rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-primary to-primary-light hover:shadow-lg hover:shadow-primary/30 transition-all duration-200"
                 >
                   Download Resume
                 </a>
