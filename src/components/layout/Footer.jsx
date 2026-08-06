@@ -110,10 +110,6 @@ export default function Footer() {
           <p className="text-xs text-text-muted text-center sm:text-left">
             © {year} ZealRise Technology. All rights reserved.
           </p>
-
-          <p className="text-xs text-text-muted">
-            Built with React, Tailwind CSS & Framer Motion.
-          </p>
         </div>
       </div>
     </footer>
