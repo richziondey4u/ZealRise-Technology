@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 
-const Anchor = 'a'
-
 const VARIANTS = {
   primary: 'bg-primary text-white hover:bg-primary-light shadow-lg shadow-primary/25',
   secondary: 'glass text-text hover:border-primary-light/50',
@@ -45,7 +43,8 @@ export default function Button({
 
   if (href) {
     return (
-      <Anchor
+      
+        <a
         href={href}
         target={target}
         rel={target === '_blank' ? 'noopener noreferrer' : undefined}
@@ -53,7 +52,7 @@ export default function Button({
         {...rest}
       >
         {content}
-      </Anchor>
+      </a>
     )
   }
 
