@@ -10,6 +10,7 @@ const QUICK_LINKS = [
   { name: "Projects", path: "/projects" },
   { name: "Services", path: "/services" },
   { name: "Contact", path: "/contact" },
+  { name: "Policy", path: "/policy" },
 ];
 
 export default function Footer() {
