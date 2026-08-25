@@ -1,6 +1,7 @@
 export const PROJECT_CATEGORIES = ["All", "Full Stack", "Frontend", "Backend"];
-import luxemarketImage from "../assets/images/luxemarket.png"
+import luxemarketImage from "../assets/images/luxemarket.png";
 import chefWebsiteImage from "../assets/images/chefweb.png";
+import  hometaste  from "../assets/images/hometaste.png";
 
 export const PROJECTS = [
   {
@@ -22,36 +23,36 @@ export const PROJECTS = [
     githubUrl: "YOUR_GITHUB_REPOSITORY",
     featured: true,
   },
-{
-  id: 2,
-  title: "Chef Restaurant Website",
-  description:
-    "A modern and responsive restaurant website designed to showcase signature dishes, chef services, customer testimonials, and an engaging dining experience. Built with a clean UI, smooth animations, and a mobile-first approach to help restaurants attract and convert more customers.",
-  category: "Frontend",
-  tags: [
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "JavaScript",
-    "Responsive Design",
-    "Framer Motion"
-  ],
-  image: chefWebsiteImage,
-  liveUrl: "https://chef-websites.netlify.app/",
-  githubUrl: "YOUR_GITHUB_REPOSITORY",
-  featured: true,
-},  
+  {
+    id: 2,
+    title: "Chef Restaurant Website",
+    description:
+      "A modern and responsive restaurant website designed to showcase signature dishes, chef services, customer testimonials, and an engaging dining experience. Built with a clean UI, smooth animations, and a mobile-first approach to help restaurants attract and convert more customers.",
+    category: "Frontend",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Framer Motion",
+    ],
+    image: chefWebsiteImage,
+    liveUrl: "https://chef-websites.netlify.app/",
+    githubUrl: "YOUR_GITHUB_REPOSITORY",
+    featured: true,
+  },
   {
     id: 3,
-    title: "Portfolio Landing Page",
+    title: "HomeTaste Food Ordering App",
     description:
-      "A pixel-perfect animated landing page built with a focus on micro-interactions and accessibility.",
-    category: "Frontend",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    image: null,
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/landing-page",
-    featured: false,
+      "A modern food ordering platform that allows customers to browse local meals, place orders, make payments, and arrange convenient food delivery.",
+    category: "Full Stack",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
+    image: hometaste,
+    liveUrl: "https://home-taste-kappa.vercel.app/",
+    githubUrl: "https://github.com/yourusername/HomeTaste",
+    featured: true,
   },
   {
     id: 4,
