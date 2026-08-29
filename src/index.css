@@ -191,7 +191,6 @@ img {
 }
 
 @media print {
-  .navbar,
   header,
   footer,
   .print\:hidden {
@@ -200,6 +199,33 @@ img {
 
   body {
     background: white !important;
+  }
+
+  #main-content {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    padding-top: 0 !important;
+  }
+
+  .glass {
+    background: white !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  .gradient-text {
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+    color: #000 !important;
+  }
+
+  * {
+    color: #000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   @page {

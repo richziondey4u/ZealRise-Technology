@@ -76,7 +76,6 @@ export default function Resume() {
         description="ZealRise Technology — innovative digital solutions, web development, mobile applications, UI/UX design, and custom software."
         path="/resume"
       />
-      ```
       <div className="flex items-center justify-between mb-8 print:hidden">
         <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
           Company Profile

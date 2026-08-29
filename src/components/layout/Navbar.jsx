@@ -34,8 +34,8 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? "bg-bg/95 backdrop-blur-md shadow-lg shadow-black/10 border-b border-border" 
+        scrolled
+          ? "bg-bg/95 backdrop-blur-md shadow-lg shadow-black/10 border-b border-border"
           : "bg-bg border-b border-border"
       }`}
     >
@@ -57,9 +57,7 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   `relative text-sm font-medium transition-colors duration-200 ${
-                    isActive
-                      ? "text-text"
-                      : "text-text-muted hover:text-text"
+                    isActive ? "text-text" : "text-text-muted hover:text-text"
                   }`
                 }
               >
@@ -86,13 +84,12 @@ export default function Navbar() {
 
         {/* Desktop Resume Button */}
         <div className="hidden md:block">
-          <a
-            href="/resume.pdf"
-            download
-            className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-primary to-primary-light hover:shadow-lg hover:shadow-primary/30 transition-all duration-200"
+          <NavLink
+            to="/resume"
+            className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white bg-primary hover:bg-primary-light transition-colors duration-200 shadow-lg shadow-primary/20"
           >
             Resume
-          </a>
+          </NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -148,13 +145,13 @@ export default function Navbar() {
                 transition={{ delay: NAV_LINKS.length * 0.05 }}
                 className="pt-4"
               >
-                <a
-                  href="/resume.pdf"
-                  download
-                  className="inline-flex w-full items-center justify-center rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-primary to-primary-light hover:shadow-lg hover:shadow-primary/30 transition-all duration-200"
+                <NavLink
+                  to="/resume"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-medium text-white bg-primary"
                 >
-                  Download Resume
-                </a>
+                  View Resume
+                </NavLink>
               </motion.li>
             </ul>
           </motion.div>
