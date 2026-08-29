@@ -13,6 +13,7 @@ const Services = lazy(() => import('./pages/Services.jsx'))
 const Experience = lazy(() => import('./pages/Experience.jsx'))
 const Contact = lazy(() => import('./pages/Contact.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
+const Resume = lazy(() => import('./pages/Resume.jsx'))
 const Policy = lazy(() => import('./pages/Policy.jsx'))
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/policy" element={<Policy />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

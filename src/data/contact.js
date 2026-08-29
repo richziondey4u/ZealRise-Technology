@@ -1,7 +1,7 @@
 export const CONTACT_INFO = {
-  whatsappNumber: '+2347055261490', // country code + number, no + or spaces
+  whatsappNumber: '+2349035341733', // country code + number, no + or spaces
   whatsappMessage: 'Hi! I saw your portfolio and would love to talk about a project.',
-  email: 'richzion08@gmail.com',
+  email: 'zealrisetechnology@gmail.com',
   location: 'Available for remote work, worldwide',
 }
 

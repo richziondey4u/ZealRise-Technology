@@ -189,3 +189,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@media print {
+  .navbar,
+  header,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  @page {
+    margin: 0.6in;
+  }
+}
