@@ -19,14 +19,14 @@ export default function Contact() {
           <ContactMethods />
         </div>
 
-        <div className="lg:col-span-2">
+        {/* <div className="lg:col-span-2">
           <ScrollReveal delay={0.1}>
             <h2 className="text-sm font-semibold text-text-muted uppercase tracking-wider mb-4">
               Find Me Online
             </h2>
           </ScrollReveal>
           <SocialList />
-        </div>
+        </div> */}
       </div>
     </section>
   )
