@@ -1,7 +1,8 @@
 export const PROJECT_CATEGORIES = ["All", "Full Stack", "Frontend", "Backend"];
 import luxemarketImage from "../assets/images/luxemarket.png";
 import chefWebsiteImage from "../assets/images/chefweb.png";
-import  hometaste  from "../assets/images/hometaste.png";
+import hometaste from "../assets/images/hometaste.png";
+import ANDY from "../assets/images/ANDY.png";
 
 export const PROJECTS = [
   {
@@ -56,16 +57,17 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: "REST API Service",
+    title: "Andy’s Watchshop",
     description:
-      "A scalable REST API with JWT authentication, rate limiting, and full OpenAPI documentation.",
-    category: "Backend",
-    tags: ["Node.js", "Express", "PostgreSQL", "Docker"],
-    image: null,
+      "A full-stack jewelry e-commerce platform with secure authentication, product management, shopping cart, orders, image uploads, and a PostgreSQL database.",
+    category: "Full Stack",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
+    image: ANDY,
     liveUrl: null,
-    githubUrl: "https://github.com/yourusername/rest-api-service",
+    githubUrl: "https://github.com/yourusername/andys-watchshop",
     featured: false,
   },
+
   {
     id: 5,
     title: "Real-Time Chat App",
