@@ -63,7 +63,7 @@ export const PROJECTS = [
     category: "Full Stack",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     image: ANDY,
-    liveUrl: null,
+    liveUrl: "https://andys-watchshop.vercel.app/",
     githubUrl: "https://github.com/yourusername/andys-watchshop",
     featured: false,
   },
