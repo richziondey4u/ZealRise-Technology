@@ -57,13 +57,13 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: "Andy’s Watchshop",
+    title: "Andy’s Jewelry",
     description:
       "A full-stack jewelry e-commerce platform with secure authentication, product management, shopping cart, orders, image uploads, and a PostgreSQL database.",
     category: "Full Stack",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     image: ANDY,
-    liveUrl: "https://andys-watchshop.vercel.app/",
+    liveUrl: "https://www.andys-jewelry.ng/",
     githubUrl: "https://github.com/yourusername/andys-watchshop",
     featured: false,
   },
