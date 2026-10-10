@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MapPin, Sparkles } from "lucide-react";
 import ScrollReveal from "../components/ui/ScrollReveal.jsx";
 import LazyImage from "../components/ui/LazyImage.jsx";
-import profileImage from "../assets/images/mypic.jpeg";
+import profileImage from "../assets/images/mypic.jpg";
 
 export default function AboutHero() {
   return (
