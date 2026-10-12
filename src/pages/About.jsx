@@ -7,12 +7,15 @@ import profileImage from "../assets/images/mypic.jpg";
 export default function AboutHero() {
   return (
     <section className="container-custom pt-16 pb-20 md:pt-24 md:pb-28">
-      {" "}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center">
-        {/* Company Image */}
+        {/* ==================== Company Image ==================== */}
         <ScrollReveal direction="left" className="md:col-span-2">
           <div className="relative w-full max-w-sm mx-auto">
-            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl -z-10" />
+            {/* Soft glow behind the card */}
+            <div
+              aria-hidden="true"
+              className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl -z-10"
+            />
 
             <motion.div
               initial={{ opacity: 0, scale: 0.92 }}
@@ -24,11 +27,15 @@ export default function AboutHero() {
                 src={profileImage}
                 alt="ZealRise Technology"
                 aspectRatio="aspect-square"
+                objectFit="cover"
+                objectPosition="bottom"
+                eager
               />
             </motion.div>
           </div>
         </ScrollReveal>
-        {/* Company Content */}
+
+        {/* ==================== Company Content ==================== */}
         <div className="md:col-span-3">
           <ScrollReveal direction="right">
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-primary-light mb-4">
