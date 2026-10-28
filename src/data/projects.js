@@ -1,6 +1,7 @@
 export const PROJECT_CATEGORIES = ["All", "Full Stack", "Frontend", "Backend"];
 import luxemarketImage from "../assets/images/luxemarket.png";
 import chefWebsiteImage from "../assets/images/chefweb.png";
+import bakewithhelenImage from "../assets/images/bakewithhelen.png";
 import hometaste from "../assets/images/hometaste.png";
 import ANDY from "../assets/images/ANDY.png";
 
@@ -67,9 +68,20 @@ export const PROJECTS = [
     githubUrl: "https://github.com/yourusername/andys-watchshop",
     featured: false,
   },
-
   {
     id: 5,
+    title: "BakewithHelen Recipes",
+    description:
+      "A warm, recipe-focused baking website featuring cakes, breads, pastries and tutorials, with category browsing, video tutorials, SEO-friendly pages and a responsive, mobile-first design.",
+    category: "Frontend",
+    tags: ["React", "Vite", "React Router", "Tailwind CSS", "SEO"],
+    image:  bakewithhelenImage,
+    liveUrl: "https://bakewithhelen.vercel.app/",
+    githubUrl: "https://github.com/yourusername/bakewithhelen",
+    featured: true,
+  },
+  {
+    id: 6,
     title: "Real-Time Chat App",
     description:
       "A WebSocket-powered messaging app supporting group chats, typing indicators, and file sharing.",
@@ -81,7 +93,7 @@ export const PROJECTS = [
     featured: true,
   },
   {
-    id: 6,
+    id: 7,
     title: "Task Management Tool",
     description:
       "A drag-and-drop kanban board with team collaboration, due dates, and activity tracking.",
